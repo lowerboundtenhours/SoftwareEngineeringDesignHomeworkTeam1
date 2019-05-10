@@ -5,17 +5,17 @@ import java.io.IOException;
 
 public class Main {
 
-	public static void main(String[] args) {
-    SingleChocolateBoiler singleChocolateBoiler	= SingleChocolateBoiler.getInstance();
+  public static void main(String[] args) {
+    SingleChocolateBoiler singleChocolateBoiler = SingleChocolateBoiler.getInstance();
 
-		try {
-			File input = new File(args[0]);
-			BufferedReader reader = new BufferedReader(new FileReader(input));
-			String line;
-			
-			while ((line = reader.readLine()) != null) {
-				String[] tokens = line.split(" ");
-				
+    try {
+      File input = new File(args[0]);
+      BufferedReader reader = new BufferedReader(new FileReader(input));
+      String line;
+      
+      while ((line = reader.readLine()) != null) {
+        String[] tokens = line.split(" ");
+        
         switch (tokens[0]) {
           case "Fill":
             singleChocolateBoiler.fill();
@@ -27,10 +27,10 @@ public class Main {
             singleChocolateBoiler.drain();
             break;
         }
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+      }
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
 
 }
