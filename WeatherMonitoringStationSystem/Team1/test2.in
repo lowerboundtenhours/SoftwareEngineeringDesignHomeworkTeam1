@@ -1,0 +1,13 @@
+data US 1 0 0
+attach US Statistics
+attach US Forecast
+attach US Current
+data US 2 0.5 0.19999
+detach US Statistics
+data US 3 0.1 0
+attach US Statistics
+data US 4 0.99 0
+attach Asia Statistics
+data Asia 5 5 5.5
+detach Asia Statistics
+data Asia 11111 11111 11111
