@@ -1,13 +1,13 @@
 # Chocolate Boiler
 
 ## Initial Design
-![Initial Design](/doc/InitialDesign.png)
+![Initial Design](./doc/InitialDesign.png)
 
 ## Refactor Design
-![Refactor Design](/doc/RefactorDesign.png)
+![Refactor Design](./doc/RefactorDesign.png)
 
 ## State Diagram
-![State Diagram](/doc/StateDiagram.png)
+![State Diagram](./doc/StateDiagram.png)
 
 ## Spec
 ### Requirements Statements
