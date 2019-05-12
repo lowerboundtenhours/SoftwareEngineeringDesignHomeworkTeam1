@@ -1,0 +1,7 @@
+attach US Forecast
+data US 0 0.1 0
+data US 0 0.2 0
+data US 0 0.3 0
+data US 0 0.7 0
+data US 0 0.8 0
+data US 0 100000000 0

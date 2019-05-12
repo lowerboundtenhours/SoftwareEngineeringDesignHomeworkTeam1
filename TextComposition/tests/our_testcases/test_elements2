@@ -1,0 +1,6 @@
+Text 0 12 5 72 Hi
+GraphicalElement 6 20 10 100 scared.jpg
+ChangeSize 0 10
+Require SimpleComposition
+Require TexComposition
+Require ArrayComposition

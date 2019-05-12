@@ -1,0 +1,9 @@
+data Asia 1 0 0
+attach Asia Current
+attach Asia Statistics
+attach Asia Forecast
+data Asia 2 0 0
+detach Asia Current
+data Asia 3 0 0
+attach Asia Current
+data Asia 4 0 0
