@@ -1,10 +1,10 @@
 # Schematic Capture Systems
 
 ### Initial Design
-![Initial Design](/doc/Initial_Design.png)
+![Initial Design](./doc/Initial_Design.png)
 
 ### Refactor Design
-![Refactor Design](/doc/Refactor_Design.png)
+![Refactor Design](./doc/Refactor_Design.png)
 
 ## Spec
 ### Requirements Statements
