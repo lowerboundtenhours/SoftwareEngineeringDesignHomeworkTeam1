@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class List implements DataStructure{
-    private ArrayList<String> storage;
+    private ArrayList<String> storage = new ArrayList<>();
     public void getByIndex(int index) {
         System.out.println(String.format("%s", storage.get(index)));
     }

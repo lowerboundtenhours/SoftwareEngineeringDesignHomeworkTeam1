@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class SkipList implements DataStructure{
-    private ArrayList<String> storage;
+    private ArrayList<String> storage = new ArrayList<>();
     public void getByIndex(int index) {
         System.out.println(String.format("SkipNode:%s", storage.get(index)));
     }

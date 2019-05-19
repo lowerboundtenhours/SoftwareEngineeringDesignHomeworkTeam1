@@ -15,13 +15,15 @@ public class Main {
       
       while ((line = reader.readLine()) != null) {
         String[] tokens = line.split(" ");
-        
         switch (tokens[0]) {
           case "Create":
             mediator.create(tokens[1], tokens[2]);
             break;
           case "Add":
             mediator.add(tokens[1], tokens[2]);
+            break;
+          case "PrintOutList":
+            mediator.traversePrint(tokens[1]);
             break;
           default:
             mediator.command(tokens);
