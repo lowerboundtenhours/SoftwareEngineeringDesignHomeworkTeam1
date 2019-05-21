@@ -31,7 +31,7 @@ public class Mediator {
             } else {
                 System.out.println(String.format("SkipList do not have method %s", lowerFirstChar(method)));
             }
-        } else {
+        } else if (ds instanceof List) {
             if (method.equals("Length")) {
                 System.out.println(ds.getLengthOrSize());
             } else if (method.equals("Get")) {
