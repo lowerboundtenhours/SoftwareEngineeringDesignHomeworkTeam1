@@ -1,4 +1,4 @@
 
 public interface Plan {
-	public String getPlan();
+    public String getPlan();
 }
