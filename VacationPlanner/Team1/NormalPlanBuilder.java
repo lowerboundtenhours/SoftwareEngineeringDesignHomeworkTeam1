@@ -2,12 +2,6 @@
 public class NormalPlanBuilder implements PlanBuilder{
 	NormalPlan plan = new NormalPlan();
 	
-	private String day = "";
-	private String hotel = "";
-	private String tickets = "";
-	private String restaurant = "";
-	private String events = "";
-	
 	public void setDay(String day) {
 		plan.setDay(day);
 	}
