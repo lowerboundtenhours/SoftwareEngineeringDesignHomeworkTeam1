@@ -1,8 +1,10 @@
 # GUIApplcation
 
 ## Initial Design
+![](./doc/VacationPlanner_init.png)
 
 ## Refactor Design
+![](./doc/VacationPlanner_refactory.png)
 
 ## Spec
 ### Requirements Statements
