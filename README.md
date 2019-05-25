@@ -9,6 +9,7 @@
 * Observer - WeatherMonitoringStationSystem
 * Factory - PowerfulDocumentViewer
 * Factory - GUIApplcation
+* Facade - HomeTheater
 
 ## Authors
 * R07944019 張雅量	
