@@ -3,6 +3,12 @@
 * An editor application carries a document.
 * A menu in the editor application contains several menu items performing three specific operations: cut, copy and paste on a document when clicked.
 
+## Class diagram
+### Initial 
+![](./initial.png)
+### Refactor
+![](./refactor.png)
+
 ## SPEC
 ### Input
 ```
@@ -12,7 +18,7 @@
 ### Output
 ```
 // if [operation] is Cut
-	Cut~
+	Cut
 
 // if [operation] is Copy
 	Copying
