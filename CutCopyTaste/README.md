@@ -18,7 +18,7 @@
 ### Output
 ```
 // if [operation] is Cut
-	Cut
+	Cut~
 
 // if [operation] is Copy
 	Copying
