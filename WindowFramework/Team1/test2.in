@@ -1,0 +1,12 @@
+window TransientWindow PMWindow
+drawCloseBox
+drawCloseBox
+window IconWindow PMWindow
+drawBorder
+drawBorder
+window IconWindow XWindow
+drawBorder
+drawBorder
+window TransientWindow XWindow
+drawCloseBox
+drawCloseBox
