@@ -1,0 +1,8 @@
+PancakeHouseMenu:
+MenuItem:A
+MenuItem:B
+MenuItem:C
+DinerMenu:
+MenuItem:Chicken
+MenuItem:Beef
+MenuItem:Pork
