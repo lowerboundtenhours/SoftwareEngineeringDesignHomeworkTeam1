@@ -10,6 +10,7 @@
 * Factory - PowerfulDocumentViewer
 * Factory - GUIApplcation
 * Chain of Responsibility - EmailHandler
+* Facade - HomeTheater
 
 ## Authors
 * R07944019 張雅量	
