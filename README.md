@@ -9,6 +9,7 @@
 * Observer - WeatherMonitoringStationSystem
 * Factory - PowerfulDocumentViewer
 * Factory - GUIApplcation
+* Chain of Responsibility - EmailHandler
 * Facade - HomeTheater
 
 ## Authors
