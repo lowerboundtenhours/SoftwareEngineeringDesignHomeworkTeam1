@@ -17,16 +17,23 @@ snapshots of Master Game.
 
 ## SPEC
 ### Input:
+```
 play
 save //save current [state_index] 
 load [record_index]
 
+```
+
 ### Output:
+
+```
 //show current state when input: play
 Play~ Current State: [state_index]
 
 // restore the state and show current state when input: load
 Loadef __init__(self): Current State: [state_index]
+
+```
 
 ### Comment:
 ```
