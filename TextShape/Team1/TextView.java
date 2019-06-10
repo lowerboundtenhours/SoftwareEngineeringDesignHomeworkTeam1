@@ -3,7 +3,7 @@ public class TextView {
     private int width;
     private int height;
 
-    public TextShape(String text, int width, int height) {
+    public TextView(String text, int width, int height) {
         this.text = text;
         this.width = width;
         this.height = height;
