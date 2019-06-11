@@ -1,0 +1,9 @@
+TextShape Kaohsiung Follow 0 0
+TextShape MAKE the 9 2
+TextShape FORTUNE MOON!!! 8 7
+display Kaohsiung
+display MAKE
+display FORTUNE
+boundingBox Kaohsiung
+boundingBox MAKE
+boundingBox FORTUNE
