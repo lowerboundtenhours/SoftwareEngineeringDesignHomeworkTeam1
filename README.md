@@ -11,6 +11,7 @@
 * Factory - GUIApplcation
 * Chain of Responsibility - EmailHandler
 * Facade - HomeTheater
+* Memento - MasterGame
 
 ## Authors
 * R07944019 張雅量	
