@@ -27,7 +27,6 @@ public class Main {
                     for (int i = 1; i < tokens.length; ++i) {
                         String[] subTokens = tokens[i].split(",");
                         Level newLevel = new Level(subTokens[0],  Float.parseFloat(subTokens[1]));
-                        System.out.printf("level name, score: %s, %f\n", newLevel.getName(), newLevel.getScore());
                         strat.addLevel(newLevel);
                     }
                     system.setSchoolStrategy(strat);
