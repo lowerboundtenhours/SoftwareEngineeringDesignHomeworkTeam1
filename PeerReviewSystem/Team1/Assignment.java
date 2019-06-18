@@ -5,6 +5,7 @@ class Assignment{
     private String id;
     private Map<String, Homework> homeworks;
     private Rubric rubric;
+    private int reviewNum;
 
     Assignment(String _id){
         this.id = _id;
