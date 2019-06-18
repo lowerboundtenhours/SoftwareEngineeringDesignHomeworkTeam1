@@ -29,4 +29,15 @@ class Assignment{
     private String id;
     private Map<String, Homework> homeworks;
     private Rubric rubric;
+
+    public int getCriteriaLength() {
+        if (this.rubric == null) {
+            return 0;
+        }
+        return this.rubric.getCriteriaLength();
+    }
+
+    public Rubric getRubric() {
+        return this.rubric;
+    }
 }

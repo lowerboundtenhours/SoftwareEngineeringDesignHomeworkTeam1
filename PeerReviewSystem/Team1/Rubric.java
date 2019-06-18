@@ -51,4 +51,12 @@ public class Rubric {
         }
         return null;
     }
+
+    public int getCriteriaLength() {
+        return this.criteria.size();
+    }
+
+    public ArrayList<Criterion> getCriteria() {
+        return this.criteria;
+    }
 }

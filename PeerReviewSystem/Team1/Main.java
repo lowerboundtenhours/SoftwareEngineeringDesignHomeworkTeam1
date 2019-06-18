@@ -9,7 +9,9 @@ public class Main {
             BufferedReader reader = new BufferedReader(new FileReader(new File(args[0])));
             String line;
             PeerReviewSystem system = new PeerReviewSystem();
-            Instructor instructor = new Instructor();
+            system.addStrategies("MeanRankingStrategy", new MeanRankingStrategy());
+            system.addStrategies("MedianRankingStrategy", new MedianRankingStrategy());
+            Instructor instructor = new Instructor(system);
 
             while ((line = reader.readLine()) != null) {
                 String[] tokens = line.split(" ");
