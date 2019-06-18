@@ -66,7 +66,7 @@ public class Rubric {
                 String levelName = d.getLevel().getName();
                 String description = d.getDescription();
                 StringBuilder sb = new StringBuilder();
-                sb.append("(").append(criterionName).append(")");
+                sb.append("(").append(criterionName).append(",").append(levelName).append(")");
                 sb.append(" ").append(description);
                 System.out.println(sb.toString());
             }
