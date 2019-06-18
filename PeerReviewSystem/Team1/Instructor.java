@@ -3,7 +3,7 @@
 public class Instructor {
 
     public Assignment createAssignment(String id) {
-
+        return null;
     }
 
     public void setAssignReviewNumber(Assignment assignment, int n) {

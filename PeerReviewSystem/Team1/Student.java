@@ -3,11 +3,11 @@ class Student{
     Student(String _id){
         id = _id;
     }
-    public addHomework(Homework h){
+    public void addHomework(Homework h){
         homeworks.add(h);
     }
 
-    public addReview(Review r){
+    public void addReview(Review r){
         reviews.add(r);
     }
 
@@ -21,12 +21,12 @@ class Student{
 
     public Homework write(Assignment a){
         Homework homework = new Homework(a, this);
-        a.addHomework(s.getId(), this);
+        a.addHomework(this.id, homework);
         this.addHomework(homework);
         return homework;
     }
 
-    public review review(Homework h, String scoreFile, SchoolStrategy schoolStrategy){
+    public Review review(Homework h, String scoreFile, SchoolStrategy schoolStrategy){
         Review review = new Review(h, this, scoreFile, schoolStrategy);
         h.addReview(review);
         this.addReview(review);
@@ -36,5 +36,5 @@ class Student{
     
     private String id;
     private ArrayList<Homework> homeworks;
-    private ReviewList<Review> reviews;
+    private ArrayList<Review> reviews;
 }
