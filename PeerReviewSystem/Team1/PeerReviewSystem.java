@@ -136,11 +136,22 @@ public class PeerReviewSystem {
     }
 
     public ArrayList<SimpleEntry<String, Float>> getAssignmentAverageCriterion(String aid) {
-        // ArrayList<SimpleEntry<String, Float>> ret = new ArrayList<SimpleEntry<String, Float>>();
-        // RankingStrategy meanStrategy = new MeanRankingStrategy();
+        ArrayList<SimpleEntry<String, Float>> ret = new ArrayList<SimpleEntry<String, Float>>();
+        RankingStrategy meanStrategy = new MeanRankingStrategy();
        
-        // for (int i = 0; i < assignment.getR)
-        // Assignment assignment = this.getAssignment(aid)
-        // return ret;
+        Assignment assignment = this.getAssignment(aid);
+        for (int i = 0; i < assignment.getCriteriaLength(); i += 1) {
+            String criterionName = assignment.getCriterionName(i);
+            ArrayList<Float> scores = new ArrayList<>();
+            for (Homework hw: assignment.getHomeworks().values()) {
+                for (Review review: hw.getReviews()) {
+                    Float score = review.getLevels().get(i).getScore();
+                    scores.add(score);
+                }
+            }
+            Float meanScore = meanStrategy.calc(scores);
+            ret.add(new SimpleEntry<String, Float>(criterionName, meanScore));
+        }
+        return ret;
     }
 }

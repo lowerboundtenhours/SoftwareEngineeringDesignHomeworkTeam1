@@ -35,4 +35,12 @@ class Assignment{
         }
         return this.rubric.getCriteriaLength();
     }
+
+    public String getCriterionName(int i) {
+        return this.rubric.getCriteria().get(i).getName();
+    }
+
+    public Map<String,Homework> getHomeworks() {
+        return homeworks;
+    }
 }
