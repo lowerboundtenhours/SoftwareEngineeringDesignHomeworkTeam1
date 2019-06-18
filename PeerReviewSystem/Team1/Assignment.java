@@ -29,11 +29,18 @@ class Assignment{
     public Homework getHomework(String id){
         return homeworks.get(id);
     }
-
     public int getCriteriaLength() {
         if (this.rubric == null) {
             return 0;
         }
         return this.rubric.getCriteriaLength();
+    }
+
+    public String getCriterionName(int i) {
+        return this.rubric.getCriteria().get(i).getName();
+    }
+
+    public Map<String,Homework> getHomeworks() {
+        return homeworks;
     }
 }
