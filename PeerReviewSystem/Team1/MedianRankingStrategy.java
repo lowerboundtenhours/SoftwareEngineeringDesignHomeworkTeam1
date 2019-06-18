@@ -1,7 +1,7 @@
 
 public class MedianRankingStrategy implements RankingStrategy {
 
-    public float calc() {
+    public float calc(Homework homework) {
         return 0;
     }
 }
