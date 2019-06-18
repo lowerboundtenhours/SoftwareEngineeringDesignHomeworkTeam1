@@ -53,10 +53,22 @@ public class Main {
                     } else if (tokens.length < 6 || tokens.length > 8) {
                         System.out.println("Assignment should be reviewed by 3-5 students.");
                     } else {
+                        Assignment assignment;
+                        if(system.assignmentIsExist(tokens[1])){
+                            assignment = system.getAssignment(tokens[1]);
+                        }
+                        else{
+                            assignment = new Assignment(tokens[1]);
+                            system.addAssignment(assignment);
+                        }
+                        Student student = system.getStudent(tokens[2]);
+                        Homework homework = student.write(assignment);
                         for (int i = 3; i < tokens.length; ++i) {
                             String[] subTokens = tokens[i].split(",");
                             // tokens: AssignmentID, StudentID
                             // subTokens: ReviewerId, SampleScoreFile
+                            Student reviewer = system.getStudent(subTokens[0]);
+                            reviewer.review(homework, subTokens[1], system.getSchoolStrategy());
                         }
                     }
                     // # SampleScoreFile format

@@ -19,7 +19,8 @@ class Review{
             this.levels.add(level);
         }
     }
-    public ArrayList<String> getLevels(){
+
+    public ArrayList<Level> getLevels(){
         return levels;
     }
     private Student reviewer;

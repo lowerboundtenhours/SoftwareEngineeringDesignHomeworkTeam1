@@ -3,23 +3,23 @@ class Homework{
     Homework(Assignment a, Student s){
         this.assignment = a;
         this.student = s;
-        this.reviews = new ArrayList();
+        this.reviews = new ArrayList<Review>();
         a.addHomework(s.getId(), this);
         s.addHomework(this);
     }
-    public addReview(Review r){
+    public void addReview(Review r){
         reviews.add(r);
     }
     public Assignment getAssignment(){
         return assignment;
     }
-    public getStudent(){
+    public Student getStudent(){
         return student;
     }
     public ArrayList<Review> getReviews(){
         return reviews;
     }
-    public setReviewers(Student s){
+    public void setReviewers(Student s){
         
     }
     private Assignment assignment;

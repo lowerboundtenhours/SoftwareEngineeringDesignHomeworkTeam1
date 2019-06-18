@@ -11,6 +11,17 @@ public class PeerReviewSystem {
         assignments.put(assignment.getId(), assignment);
     }
 
+    public Student getStudent(String id){
+        return students.get(id);
+    }
+
+    public Assignment getAssignment(String id){
+        return assignments.get(id);
+    }
+    public Boolean assignmentIsExist(String id){
+        return this.assignments.containsKey(id);
+    }
+
     public void printRubric(String id) {
         assignments.get(id).printRubric();
     }
