@@ -21,12 +21,16 @@ class Student{
 
     public Homework write(Assignment a){
         Homework homework = new Homework(a, this);
+        a.addHomework(s.getId(), this);
+        this.addHomework(homework);
         return homework;
     }
 
     public review review(Homework h, String scoreFile){
-       Review review = new Review(h, this, scoreFile);
-       return review;
+        Review review = new Review(h, this, scoreFile);
+        h.addReview(review);
+        this.addReview(review);
+        return review;
     }
 
     

@@ -17,8 +17,6 @@ class Review{
         while(input.hasNext()){
             this.levels.add(input.next());
         }
-        h.addReview(this);
-        r.addReview(this);
     }
     public ArrayList<String> getLevels(){
         return levels;
