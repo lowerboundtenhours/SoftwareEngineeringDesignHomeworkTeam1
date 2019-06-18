@@ -35,16 +35,6 @@ class Student{
         return review;
     }
     
-    public void printStatus(){
-        System.out.print("############\n");
-        System.out.printf("Student Id: %s\n", id);
-        System.out.print("Homework\n");
-        for(Homework h: this.homeworks){
-            h.printStatus();
-        }
-        System.out.print("############\n");
-    }
-    
     private String id;
     private ArrayList<Homework> homeworks;
     private ArrayList<Review> reviews;

@@ -95,16 +95,6 @@ public class Main {
                 } else if (tokens[0].equals("findWeakness")) {
                     // findWeakness [AssignmentID] [StudentID] [RankingStrategy]
                     instructor.getStudentWeakness(tokens[1], tokens[2], tokens[3]);
-                } else if (tokens[0].equals("testStudent")){
-                    Student student = system.getStudent(tokens[1]);
-                    if(student != null){
-                        student.printStatus();
-                    }
-                } else if (tokens[0].equals("testAssignment")){
-                    Assignment assignment = system.getAssignment(tokens[1]);
-                    if(assignment != null){
-                        assignment.printStatus();
-                    }
                 }
             }
             reader.close();

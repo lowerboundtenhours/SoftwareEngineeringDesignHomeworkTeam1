@@ -21,14 +21,6 @@ class Homework{
         
     }
 
-    public void printStatus(){
-        System.out.printf("Homework status\n");
-        System.out.printf("Assignment Id: %s\n", assignment.getId());
-        System.out.printf("write by %s\n", student.getId());
-        for(Review review: reviews){
-            review.printStatus();
-        }
-    }
     private Assignment assignment;
     private Student student;
     private ArrayList<Review> reviews;
