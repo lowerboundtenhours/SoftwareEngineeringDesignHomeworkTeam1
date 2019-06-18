@@ -37,8 +37,9 @@ public class Main {
                     // designCriterion [AssignmentID] [RubricFile]
                     Rubric newRubric = new Rubric();
                     newRubric.readRubricFile(tokens[2], system.getSchoolStrategy());
-
-                    instructor.setAssignemntRubric(instructor.createAssignment(tokens[1]), newRubric);
+                    Assignment assignment = instructor.createAssignment(tokens[1]);
+                    system.addAssignment(assignment);
+                    instructor.setAssignemntRubric(assignment, newRubric);
                                 
                 } else if (tokens[0].equals("assignment")) {
                     // assignment [AssignmentID] [StudentID] [ReviewrID],[SampleScoreFile] [ReviewrID],[SampleScoreFile]...
