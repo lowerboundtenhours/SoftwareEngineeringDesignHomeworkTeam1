@@ -25,7 +25,7 @@ public class Instructor {
 
     public void getStudentScore(String aId, String sId, String strategy) {
         float score = system.getStudentScore(aId, sId, strategy);
-        System.out.printf("Assignment: %s, Student: %s, , Score: %.1f%n", aId, sId, score);
+        System.out.printf("Assignment: %s, Student: %s, Score: %.1f%n", aId, sId, score);
     }
 
     public void getStudentStrength(String aId, String sId, String strategy) {
