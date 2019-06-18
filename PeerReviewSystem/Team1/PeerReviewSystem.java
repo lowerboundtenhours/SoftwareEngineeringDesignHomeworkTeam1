@@ -7,8 +7,12 @@ public class PeerReviewSystem {
     private Map<String, Assignment> assignments = new HashMap<>();
     private SchoolStrategy schoolStrategy;
 
-    public void addAssignment(Assigment assignment) {
+    public void addAssignment(Assignment assignment) {
         assignments.put(assignment.getId(), assignment);
+    }
+
+    public void printRubric(String id) {
+        assignments.get(id).printRubric();
     }
 
     public void addStudent(Student student) {
