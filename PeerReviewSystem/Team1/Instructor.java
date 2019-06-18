@@ -8,7 +8,7 @@ public class Instructor {
     }
 
     public Assignment createAssignment(String id) {
-        return null;
+        return new Assignment(id);
     }
 
     public void setAssignReviewNumber(Assignment assignment, int n) {
@@ -16,7 +16,7 @@ public class Instructor {
     }
 
     public void setAssignemntRubric(Assignment assignment, Rubric rubric) {
-
+        assignment.setRubric(rubric);
     }
 
     public void getAssignmentAverageCriterion(String aId) {

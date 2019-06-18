@@ -59,4 +59,17 @@ public class Rubric {
     public ArrayList<Criterion> getCriteria() {
         return this.criteria;
     }
+    public void printThis() {
+        for (Criterion c: this.criteria) {
+            String criterionName = c.getName();
+            for (Descriptor d: c.getDescriptors()) {
+                String levelName = d.getLevel().getName();
+                String description = d.getDescription();
+                StringBuilder sb = new StringBuilder();
+                sb.append("(").append(criterionName).append(",").append(levelName).append(")");
+                sb.append(" ").append(description);
+                System.out.println(sb.toString());
+            }
+        }
+    }
 }
