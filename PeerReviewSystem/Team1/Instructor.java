@@ -23,7 +23,8 @@ public class Instructor {
     public void getAssignmentAverageCriterion(String aId) {
         ArrayList<SimpleEntry<String, Float>> ret = system.getAssignmentAverageCriterion(aId);
         for (SimpleEntry<String, Float> entry: ret) {
-            String.format("Assignment: %s, Criterion: %s, AvgScore: %.1f", aId, entry.getKey(), entry.getValue());
+            String out = String.format("Assignment: %s, Criterion: %s, AvgScore: %.1f", aId, entry.getKey(), entry.getValue());
+            System.out.println(out);
         }
     }
 
