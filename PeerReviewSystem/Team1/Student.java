@@ -2,6 +2,8 @@ import java.util.ArrayList;
 class Student{
     Student(String _id){
         id = _id;
+        homeworks = new ArrayList<Homework>();
+        reviews = new ArrayList<Review>();
     }
     public void addHomework(Homework h){
         homeworks.add(h);
@@ -32,7 +34,6 @@ class Student{
         this.addReview(review);
         return review;
     }
-
     
     private String id;
     private ArrayList<Homework> homeworks;

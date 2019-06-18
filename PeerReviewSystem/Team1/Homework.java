@@ -4,8 +4,6 @@ class Homework{
         this.assignment = a;
         this.student = s;
         this.reviews = new ArrayList<Review>();
-        a.addHomework(s.getId(), this);
-        s.addHomework(this);
     }
     public void addReview(Review r){
         reviews.add(r);
@@ -22,6 +20,7 @@ class Homework{
     public void setReviewers(Student s){
         
     }
+
     private Assignment assignment;
     private Student student;
     private ArrayList<Review> reviews;
