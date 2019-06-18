@@ -24,5 +24,5 @@ class Review{
     }
     private Student reviewer;
     private Homework homework;
-    private ArrayList<level> levels;
+    private ArrayList<Level> levels;
 }
