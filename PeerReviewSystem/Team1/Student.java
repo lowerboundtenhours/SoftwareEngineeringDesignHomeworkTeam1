@@ -2,6 +2,8 @@ import java.util.ArrayList;
 class Student{
     Student(String _id){
         id = _id;
+        homeworks = new ArrayList<Homework>();
+        reviews = new ArrayList<Review>();
     }
     public void addHomework(Homework h){
         homeworks.add(h);
@@ -32,7 +34,16 @@ class Student{
         this.addReview(review);
         return review;
     }
-
+    
+    public void printStatus(){
+        System.out.print("############\n");
+        System.out.printf("Student Id: %s\n", id);
+        System.out.print("Homework\n");
+        for(Homework h: this.homeworks){
+            h.printStatus();
+        }
+        System.out.print("############\n");
+    }
     
     private String id;
     private ArrayList<Homework> homeworks;

@@ -26,6 +26,17 @@ class Assignment{
         return homeworks.get(id);
     }
 
+    public void printStatus(){
+        System.out.print("###############\n");
+        System.out.printf("Assignment Id %s\n", id);
+        for(Map.Entry<String, Homework> entry: homeworks.entrySet()){
+            System.out.printf("Student Id: %s\n", entry.getKey());
+            entry.getValue().printStatus();
+
+        } 
+        System.out.print("###############\n");
+    }
+
     private String id;
     private Map<String, Homework> homeworks;
     private Rubric rubric;
