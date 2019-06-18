@@ -1,3 +1,4 @@
+import static java.util.AbstractMap.SimpleEntry;
 import java.util.ArrayList;
 
 public class Instructor {
@@ -20,7 +21,10 @@ public class Instructor {
     }
 
     public void getAssignmentAverageCriterion(String aId) {
-
+        ArrayList<SimpleEntry<String, Float>> ret = system.getAssignmentAverageCriterion(aId);
+        for (SimpleEntry<String, Float> entry: ret) {
+            String.format("Assignment: %s, Criterion: %s, AvgScore: %.1f", aId, entry.getKey(), entry.getValue());
+        }
     }
 
     public void getStudentScore(String aId, String sId, String strategy) {
