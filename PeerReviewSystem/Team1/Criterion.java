@@ -1,25 +1,18 @@
+import java.util.ArrayList;
 
 public class Criterion {
     
     private String name;
-    private Level level;
-    private String descriptor;
+    private ArrayList<Descriptor> descriptors = new ArrayList<>();
 
-    public Criterion(String name, Level level, String desc) {
+    public Criterion(String name) {
         this.name = name;
-        this.level = level;
-        this.descriptor = desc;
+    }
+    public void addDescriptor (Level level, String desc) {
+        this.descriptors.add(new Descriptor(level, desc));
     }
 
     public String getName() {
         return this.name;
-    }
-
-    public Level getLevel() {
-        return this.level;
-    }
-
-    public String getDescriptor() {
-        return this.descriptor;
     }
 }
