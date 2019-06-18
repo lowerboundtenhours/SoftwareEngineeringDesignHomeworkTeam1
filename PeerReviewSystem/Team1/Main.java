@@ -9,8 +9,8 @@ public class Main {
             BufferedReader reader = new BufferedReader(new FileReader(new File(args[0])));
             String line;
             PeerReviewSystem system = new PeerReviewSystem();
-            system.addStrategies("MeanRankingStrategy", new MeanRankingStrategy());
-            system.addStrategies("MedianRankingStrategy", new MedianRankingStrategy());
+            system.addStrategy("MeanRankingStrategy", new MeanRankingStrategy());
+            system.addStrategy("MedianRankingStrategy", new MedianRankingStrategy());
             Instructor instructor = new Instructor(system);
 
             while ((line = reader.readLine()) != null) {

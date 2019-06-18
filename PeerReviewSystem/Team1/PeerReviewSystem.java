@@ -9,8 +9,8 @@ public class PeerReviewSystem {
     private Map<String, RankingStrategy> rankingStrategies = new HashMap<>();
     private SchoolStrategy schoolStrategy;
 
-    public void addStrategies(String name, RankingStrategy s) {
-        rankingStrategies.put(name, s);
+    public void addStrategy(String name, RankingStrategy rs) {
+        rankingStrategies.put(name, rs);
     }
 
     public void addAssignment(Assignment assignment) {
@@ -84,9 +84,9 @@ public class PeerReviewSystem {
 
         // Find Strengh
         ArrayList<String> result = new ArrayList<>();
-        float minScore = this.min(scores);
+        float maxScore = this.max(scores);
         for (int i = 0; i < scores.size(); i++) {
-            if (scores.get(i) - minScore <= 1e-6f) {
+            if (maxScore - scores.get(i) <= 1e-6f) {
                 String name = assignment.getRubric().getCriteria().get(i).getName();
                 result.add(name);
             }
@@ -103,9 +103,9 @@ public class PeerReviewSystem {
 
         // Find Strengh
         ArrayList<String> result = new ArrayList<>();
-        float maxScore = this.max(scores);
+        float minScore = this.min(scores);
         for (int i = 0; i < scores.size(); i++) {
-            if (scores.get(i) - maxScore <= 1e-6f) {
+            if (scores.get(i) - minScore <= 1e-6f) {
                 String name = assignment.getRubric().getCriteria().get(i).getName();
                 result.add(name);
             }
@@ -120,6 +120,7 @@ public class PeerReviewSystem {
                 minVal = list.get(i);
             }
         }
+        return minVal;
     }
 
     private float max(ArrayList<Float> list) {
@@ -129,6 +130,7 @@ public class PeerReviewSystem {
                 maxVal = list.get(i);
             }
         }
+        return maxVal;
     }
 
 }
