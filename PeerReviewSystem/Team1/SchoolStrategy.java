@@ -10,4 +10,14 @@ public class SchoolStrategy {
     public ArrayList<Level> getLevels() {
         return this.levels;
     }
+
+    public Level getLevelByName(String name) {
+
+        for (Level level : this.levels) {
+            if (level.getName().equals(name)) {
+                return level;
+            }
+        }
+        return null;
+    }
 }
