@@ -26,8 +26,8 @@ class Student{
         return homework;
     }
 
-    public review review(Homework h, String scoreFile){
-        Review review = new Review(h, this, scoreFile);
+    public review review(Homework h, String scoreFile, SchoolStrategy schoolStrategy){
+        Review review = new Review(h, this, scoreFile, schoolStrategy);
         h.addReview(review);
         this.addReview(review);
         return review;

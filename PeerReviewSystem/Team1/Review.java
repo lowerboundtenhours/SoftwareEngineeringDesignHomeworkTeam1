@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.io.*;
 
 class Review{
-    Review(Homework h, Student r, String scoreFile){
+    Review(Homework h, Student r, String scoreFile, SchoolStrategy schoolStrategy){
         this.homework = h;
         this.reviewer = r;
         this.levels = new ArrayList();
@@ -15,7 +15,8 @@ class Review{
             e.printStackTrace();
         }
         while(input.hasNext()){
-            this.levels.add(input.next());
+            Level level = schoolStrategy.getLevelByName(input.next());
+            this.levels.add(level);
         }
     }
     public ArrayList<String> getLevels(){
@@ -23,5 +24,5 @@ class Review{
     }
     private Student reviewer;
     private Homework homework;
-    private ArrayList<String> levels;
+    private ArrayList<Level> levels;
 }
