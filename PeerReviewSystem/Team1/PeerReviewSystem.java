@@ -28,8 +28,9 @@ public class PeerReviewSystem {
         return this.assignments.containsKey(id);
     }
 
-    public void printRubric(String id) {
-        assignments.get(id).printRubric();
+    public void printRubric(String aid) {
+        Rubric rubric = assignments.get(aid).getRubric();
+        rubric.printThis();
     }
 
     public void addStudent(Student student) {

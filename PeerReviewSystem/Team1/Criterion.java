@@ -15,4 +15,8 @@ public class Criterion {
     public String getName() {
         return this.name;
     }
+
+    public ArrayList<Descriptor> getDescriptors() {
+        return descriptors;
+    }
 }
