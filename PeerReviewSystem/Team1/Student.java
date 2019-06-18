@@ -21,8 +21,6 @@ class Student{
 
     public Homework write(Assignment a){
         Homework homework = new Homework(a, this);
-        homeworks.add(homework);
-        a.addHomework(homework);
         return homework;
     }
 
