@@ -29,7 +29,6 @@ class Assignment{
     public Homework getHomework(String id){
         return homeworks.get(id);
     }
-
     public int getCriteriaLength() {
         if (this.rubric == null) {
             return 0;

@@ -1,6 +1,8 @@
-import java.util.Map;
+import static java.util.AbstractMap.SimpleEntry;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.ArrayList;
+import java.util.Map;
 
 
 public class PeerReviewSystem {
@@ -133,4 +135,12 @@ public class PeerReviewSystem {
         return maxVal;
     }
 
+    public ArrayList<SimpleEntry<String, Float>> getAssignmentAverageCriterion(String aid) {
+        // ArrayList<SimpleEntry<String, Float>> ret = new ArrayList<SimpleEntry<String, Float>>();
+        // RankingStrategy meanStrategy = new MeanRankingStrategy();
+       
+        // for (int i = 0; i < assignment.getR)
+        // Assignment assignment = this.getAssignment(aid)
+        // return ret;
+    }
 }
