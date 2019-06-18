@@ -6,7 +6,7 @@ class Review{
     Review(Homework h, Student r, String scoreFile, SchoolStrategy schoolStrategy){
         this.homework = h;
         this.reviewer = r;
-        this.levels = new ArrayList();
+        this.levels = new ArrayList<>();
         Scanner input = null;
         try{
             input = new Scanner(new FileReader(scoreFile));
