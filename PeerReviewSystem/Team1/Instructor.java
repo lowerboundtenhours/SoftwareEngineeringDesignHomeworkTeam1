@@ -13,21 +13,20 @@ public class Instructor {
     public void setAssignemntRubric(Assignment assignment, Rubric rubric) {
 
     }
-    
 
-    public int getStudentScore(Student student, RankingStrategy strategy) {
-
-    }
-
-    public int getStudentStrength(Student student, RankingStrategy strategy) {
+    public void getAssignmentAverageCriterion(String aId) {
 
     }
 
-    public int getStudentWeakness(Student student, RankingStrategy strategy) {
+    public void getStudentScore(String aId, String sId, String strategy) {
 
     }
 
-    public int getAssignmentAvgScore(Assignment assignment) {
+    public void getStudentStrength(String aId, String sId, String strategy) {
+
+    }
+
+    public void getStudentWeakness(String aId, String sId, String strategy) {
 
     }
 }
