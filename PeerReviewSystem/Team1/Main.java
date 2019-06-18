@@ -71,7 +71,9 @@ public class Main {
                             // tokens: AssignmentID, StudentID
                             // subTokens: ReviewerId, SampleScoreFile
                             Student reviewer = system.getStudent(subTokens[0]);
-                            reviewer.review(homework, subTokens[1], system.getSchoolStrategy());
+                            Review review = reviewer.review(homework, subTokens[1], system.getSchoolStrategy());
+                            System.out.printf("%s-%s was reviewed by %s. Level:%s\n", 
+                                              tokens[1], tokens[2], subTokens[0], review.getLevelString());
                         }
                     }
                     // # SampleScoreFile format

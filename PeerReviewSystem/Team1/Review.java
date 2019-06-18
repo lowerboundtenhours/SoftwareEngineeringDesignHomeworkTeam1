@@ -8,21 +8,33 @@ class Review{
         this.reviewer = r;
         this.levels = new ArrayList<Level>();
         Scanner input = null;
+        int maxLevel = h.getAssignment().getCriteriaLength();
+        int levelNum = 0;
         try{
             input = new Scanner(new FileReader(scoreFile));
         }
         catch(IOException e){
             e.printStackTrace();
         }
-        while(input.hasNext()){
+        while(input.hasNext() && levelNum < maxLevel){
             Level level = schoolStrategy.getLevelByName(input.next());
             this.levels.add(level);
+            ++levelNum;
         }
         input.close();
     }
 
     public ArrayList<Level> getLevels(){
         return levels;
+    }
+
+    public String getLevelString(){
+        String ret = "";
+        for(Level l: levels){
+            ret += " ";
+            ret += l.getName();
+        }
+        return ret;
     }
 
     private Student reviewer;
